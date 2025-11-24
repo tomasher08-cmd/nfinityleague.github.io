@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity League</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HERO SEKCE */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #000000 0%, #0d1b2a 50%, #001f3f 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #00aaff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            border: 2px solid #00aaff;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: #00aaff;
+            color: black;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #0077cc;
+            border-color: #0077cc;
+        }
+
+        /* O NÁS SEKCE */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #00aaff;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.85;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #000000;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Infinity League</h1>
+        <p>Amatérská League of Legends liga pro hráče, kteří se chtějí posouvat, soutěžit a stát se součástí esport komunity.</p>
+        
+        <div class="buttons">
+            <a href="https://discord.gg/" class="btn primary">Připojit se na Discord</a>
+            <a href="#onas" class="btn">O nás</a>
+        </div>
+    </div>
+
+    <!-- O NÁS -->
+    <div class="section" id="onas">
+        <h2>O nás</h2>
+        <p>
+            Infinity League (INL) je komunita a amatérská esport liga pro hráče League of Legends 
+            v nižším až středním elo. Naší misí je vytvářet férové, zábavné a soutěžní prostředí, 
+            kde si každý hráč může zkusit turnajovou atmosféru — bez toxicity a bez stresu.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Infinity League © 2025 – All rights reserved
+    </footer>
+
+</body>
+</html>
