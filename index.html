@@ -1,10 +1,100 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infinity League</title>
-  </head>
-  <body style="font-family: Arial; text-align: center; background: #0a0a0a; color: white;">
-    <h1>Infinity League</h1>
-    <p>Amatérská League of Legends liga pro začínající hráče.</p>
-    <a href="https://discord.gg/" style="color: #00aaff;">Připoj se k nám na Discord</a>
-  </body>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #FF006A 130%);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Glow efekt v pozadí */
+        .glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: #FF006A;
+            filter: blur(180px);
+            opacity: 0.25;
+            z-index: 0;
+            top: -100px;
+            right: -150px;
+        }
+
+        img.logo {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            z-index: 2;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            background: #FF006A;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            z-index: 2;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #ff2b80;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow"></div>
+
+    <div class="container">
+
+        <!-- SEM PŘIDÁŠ LOGO (nahraď “logo.png” za svůj soubor) -->
+        <img src="logo.png" class="logo" alt="INL Logo" />
+
+        <h1>Infinity League</h1>
+        <p>Amatérská League of Legends liga pro začínající hráče.  
+        Komunita, zábava a cesta k vyšším tierům.</p>
+
+        <a href="#" class="btn">Připoj se na Discord</a>
+    </div>
+</body>
 </html>
+
