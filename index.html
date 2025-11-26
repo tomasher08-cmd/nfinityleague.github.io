@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity League</title>
 
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #FF006A 130%);
-            color: white;
-            height: 100vh;
-            overflow: hidden;
+            padding: 0;
+            background: #0d0d0d;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
         }
 
-        .container {
+        /* HERO SEKCE */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #000000 0%, #0d1b2a 50%, #001f3f 100%);
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100%;
+            justify-content: center;
             text-align: center;
-            padding: 20px;
-            position: relative;
+            padding: 0 20px;
         }
 
-        /* Glow efekt v pozadí */
-        .glow {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: #FF006A;
-            filter: blur(180px);
-            opacity: 0.25;
-            z-index: 0;
-            top: -100px;
-            right: -150px;
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #00aaff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
 
-        img.logo {
-            width: 180px;
-            height: 180px;
-            object-fit: contain;
-            margin-bottom: 20px;
-            z-index: 2;
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            opacity: 0.9;
         }
 
-        h1 {
-            font-size: 48px;
-            margin: 10px 0;
-            z-index: 2;
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
         }
 
-        p {
-            font-size: 20px;
-            max-width: 600px;
-            z-index: 2;
-        }
-
-        /* Discord tlačítko */
-        .discord-btn {
-            margin-top: 30px;
-            padding: 14px 30px;
-            border-radius: 10px;
-            background: #5865F2; /* Discord barva */
-            border: none;
-            font-size: 22px;
+        .btn {
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
             font-weight: 600;
             color: white;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            z-index: 2;
-
-            box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
-            transition: 0.25s ease-in-out;
+            border: 2px solid #00aaff;
+            transition: 0.3s;
         }
 
-        .discord-btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 28px rgba(255, 0, 106, 0.8);
-            background: #6d75ff;
+        .btn.primary {
+            background: #00aaff;
+            color: black;
         }
 
-        .icon {
-            font-size: 26px;
+        .btn:hover {
+            transform: scale(1.05);
+            background: #0077cc;
+            border-color: #0077cc;
+        }
+
+        /* O NÁS SEKCE */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #00aaff;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.85;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #000000;
+            opacity: 0.7;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="glow"></div>
 
-    <div class="container">
-
-        <!-- SEM PŘIDÁŠ LOGO (soubor pojmenuj logo.png) -->
-        <img src="logo INL.png" class="logo" alt="INL Logo" />
-
+    <!-- HERO -->
+    <div class="hero">
         <h1>Infinity League</h1>
-        <p>Amatérská League of Legends liga pro začínající hráče.<br>
-        Komunita, zábava a cesta k vyšším tierům.</p>
-
-        <!-- DISCORD ODKAZ -->
-        <a href="https://discord.gg/bv7mm2JM" target="_blank" class="discord-btn">
-            <span class="icon">💬</span>
-            Připoj se na Discord
-        </a>
-
+        <p>Amatérská League of Legends liga pro hráče, kteří se chtějí posouvat, soutěžit a stát se součástí esport komunity.</p>
+        
+        <div class="buttons">
+            <a href="https://discord.gg/" class="btn primary">Připojit se na Discord</a>
+            <a href="#onas" class="btn">O nás</a>
+        </div>
     </div>
+
+    <!-- O NÁS -->
+    <div class="section" id="onas">
+        <h2>O nás</h2>
+        <p>
+            Infinity League (INL) je komunita a amatérská esport liga pro hráče League of Legends 
+            v nižším až středním elo. Naší misí je vytvářet férové, zábavné a soutěžní prostředí, 
+            kde si každý hráč může zkusit turnajovou atmosféru — bez toxicity a bez stresu.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Infinity League © 2025 – All rights reserved
+    </footer>
+
 </body>
 </html>
-
 
